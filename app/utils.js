@@ -1,0 +1,3 @@
+// This is a utility function that we can use with a PREPARED STATEMENT to...
+export const selectStar = (connection, tableName) =>
+  connection.execute(`SELECT * FROM ${tableName}`);
